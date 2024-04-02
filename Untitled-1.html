@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript" src="/Users/SIRIOASTI/Desktop/PERSONALE/HTML/corso dev/esercizio 020424/Untitled-1.js"></script>
+<head>
+    <title>VENDITA TELEFONI ONLINE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+        .phone {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            flex-basis: 30%;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            text-align: center;
+            
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        img {
+            width: 50%;
+            
+        }
+        button.special {
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .amazonLink {
+            color: rgb(7, 65, 65);
+            text-decoration: #333;
+        }
+        .classe {
+            display: none;
+        }
+        .prezzo-giallo{
+            color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+       
+        <h1>CELLULARI & SMARTPHONE RICONDIZIONATI: garantiti minimo 12 mesi</h1>
+        <button class="special" type="button" onclick="cambiaTitoloH1 ()">CAMBIA NOME</button>
+    </header>
+    <main>
+       
+        <div class="phone">
+            <img src="/Users/SIRIOASTI/Desktop/PERSONALE/HTML/corso dev/esercizio 020424/iphone15.webp" alt="iphone15">
+            <h2><a class="amazonLink" href="https://www.amazon.it/Apple-iPhone-15-128-GB/dp/B0CHWV5HTM/ref=sr_1_1_sspa?crid=1PJUGF4CNEJ2V&dib=eyJ2IjoiMSJ9.rUMJ5iSi6OpXQCScvqypWLg-dmtp-WjzwpRmm0iijiTeGQn7hLERpHh7mV9Mrm-cIxmuRpMb-Q0Pq2miDr7U31IqCzEL_dtoSKy71Lv3XfEDKnS9XsyVJ1Vb1vHL5GkXjvVa-N9IIo_lLXM2pYFB2pjVfpDNYmsiTjtsjgplSJOnNFTpNB3FJwLlKrA15w-kWzIyxe7XOiCTh95VAzXgnx_ebuYthVzVo9_n9og5MbvJkx7OqirrAueER3HDmDP_IabIzKJcrd9IWz2KKTldvEjr1h6qAGQwwfofhz3zvmo.qazAXuJ5fu5appAaYmDnwWt4VDEWKa4BcqCg2ntxQYM&dib_tag=se&keywords=iphone+15&qid=1711964704&sprefix=IPHONE+%2Caps%2C101&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">IPHONE 15</a></h2>
+            <p class="prezzo">PREZZO: 729€</p>
+            <button>ACQUISTA ORA</button>
+        </div>
+        <div class="phone">
+            <img src="/Users/SIRIOASTI/Desktop/PERSONALE/HTML/corso dev/esercizio 020424/SAMSUNG S24AI.jpg" alt="samsung-s24-ai">
+            <h2><a class="amazonLink" href="https://www.amazon.it/SAMSUNG-Smartphone-Caricatore-Fotocamera-Versione/dp/B0CNVWT795/ref=sr_1_1?crid=1PJVDJQKWFIH0&dib=eyJ2IjoiMSJ9._ChgeX_21spL4nv2lDvs2YWWiYD_69nRaEblRk-GRMryOrEWwFHT7l9otOj20g_UkY96k11IAoCwt5FJru-2wdw3nCS0aCIfZiC64Zjmy8T9X_rl3-Gezq1QNCUnmXQDH0cKEL3AN5F7x-w3AufATCaCHpWgBbFU2121czYYsT5aBiUQQ5U9x7muY8ygcuXruROaXpWa6YI4eH2JknAuX1Mh0DEJOePJB4Ny-QTDEc4FDR-4pQrqLSKUUoSrDgz9NN5DOpQUxpPwUJrkZ5kqdED33xlm7jtwYk_fJJ_uymY.L8GgDMDasu32T8eXBR3HaCgtWtIKomRjD5aJgifq1zQ&dib_tag=se&keywords=samsung+s24&qid=1711964858&sprefix=SAMSUNG+%2Caps%2C111&sr=8-1" >SAMSUNG S24 AI</a></h2>
+            <p class="prezzo">PREZZO: 829€</p>
+            <button>ACQUISTA ORA</button>
+        </div>
+        <div class="phone">
+            <img src="/Users/SIRIOASTI/Desktop/PERSONALE/HTML/corso dev/esercizio 020424/samsung s24ultra ai.webp" alt="samsung-ultra-s24-ai">
+            <h2><a class="amazonLink" href="https://www.amazon.it/SAMSUNG-Smartphone-Caricatore-Fotocamera-Titanium/dp/B0CNVSK1HG/ref=sr_1_1?crid=WIXR5QN1NM4U&dib=eyJ2IjoiMSJ9.kB0ogdudj9hwwFNmKY_LK3eBfR748gpb4hwSZoYagBxHdk_hJet_zOR4E1KpIdIm_y29eackuYBKSrprV6qdxZ-3jq-hP_wJ040vOId8Xm8Tfyw0hMIDAzWmFWRfAkmQ9lz-vuqrLAa-QfGcR9cxq0XTfQdvi1iAmzk3q3Ae-XYIFlDSULG9kqvJP_F1CKNg7R7O-jI7jlp5rGUs4FjAJC4WEmBkhYLVVOAjXptsbLQHTM0rK1Vk0oKRLvCGRGRpXtmiNLEGbDpKM-6G7yVrkLByztlLcYYOfEn26raSCiw.6e2dEEKMY4ZZOzNxQdlfzWIEjegaGI0ieJ1mAPOh3YU&dib_tag=se&keywords=samsung+s24+ultra&qid=1711964944&sprefix=samsung+s24%2Caps%2C204&sr=8-1">SAMSUNG S24 AI ULTRA</a></h2>
+            <p class="prezzo" >PREZZO: 1299€</p>
+            <button>ACQUISTA ORA</button>
+        </div>
+        <div class="phone">
+            <img src="/Users/SIRIOASTI/Desktop/PERSONALE/HTML/corso dev/esercizio 020424/X14ULTRA_NERO_F_R.webp" alt="XIAOMI-14-ULTRA">
+            <h2><a class="amazonLink" href="https://www.amazon.it/Xiaomi-Smartphone-Snapdragon-Display-Batteria/dp/B0CP9WZLXF/ref=sr_1_1?crid=3RYUS5VQ7P3CF&dib=eyJ2IjoiMSJ9.yMD6UVDk2CAGlfrAx1BPZDMyBe-jOEsavRWb0wC3X3yrT5sNoyO0_LjU3el3pGO0mjkTmlKhuv_27Xyf1VhpicJxBTMWUK_JRt_pOyqC_vsnTyiAjI5aUQj5-2zhDRh5pMuQQQhHvnx15w8cjcO9lXgYvL6nAN3nf3P7A8pt_XjrCy8r_IqBI3PTiG76jWhWaNxhbzuRQ839-1BBR3jI1Q2JXFMMonbdiYxgkBapXyykZoLnyWOLT6P-0BEbnP3u0vViEtSveR2cTL57w6Zz9sXfTFX1adnOxDqLEQO4yPQ.t0sjiurtKv2MG5DSAVgCi50xOwUqTYIE53TfAa5RVzo&dib_tag=se&keywords=xiaomi+14+ultra&qid=1711965109&sprefix=X%2Caps%2C144&sr=8-1">  XIAOMI 14ULTRA</a></h2>
+            <p class="prezzo">PREZZO: 1199€</p>
+            <button>ACQUISTA ORA</button>
+        </div>
+        <div class="phone">
+            <img src="/Users/SIRIOASTI/Desktop/PERSONALE/HTML/corso dev/esercizio 020424/IPHONE15PROMAX.webp" alt="IPHONE-15-PROMAX">
+            <h2><a class="amazonLink" href="https://www.amazon.it/Apple-iPhone-Pro-Max-256/dp/B0CHX4FBSK/ref=sr_1_1_sspa?crid=3NGU8NVAALGZ1&dib=eyJ2IjoiMSJ9.g0tVbMec1KU2MhhLniEZqTkroUUnXcXOMJuG6vp-kxg9_1h5HoBi7mTdazIz_ygollmH0tj8lLh2adB8M_chHVHsYR5MMtS5crkWWi1HxRX7uf6lGvTNikM-A5rOjTpGuNOr22xZ9R3dMDlr-r21cyquIwTEtyjGiW6d3K9VvIuBp5-d8us5HsA1zCe6FtYP_lNdEVNjDraf-eAgNHEcpHIIcD6JK9ogQG8j78xFy-xNePw8Bp3jmEzRwIbbhTZYN1f-nciHNuUhgd_YxaSXy-Za6FnOQQns0GKXjcgbKOU.l6ZEtR-OKoeWLLhrX0Fo-yvSSvSP-w5x4K312VWuOcs&dib_tag=se&keywords=iphone+15+pro+max&qid=1711965166&sprefix=iphone%2Caps%2C104&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> IPHONE PRO-MAX 15</a></h2>
+            <p class="prezzo">PREZZO: 1000€</p>
+            <button>ACQUISTA ORA</button>
+        </div>
+    </main>
+    <input type="text" placeholder="Lascia un commento">
+    <footer>
+        <p>AMG TECH SRLS  Corso volta n.3 BARI (BA)</p>
+        <P>P.IVA 010102201020102 FAX:081-2255225</P>
+        <p>Copyright &copy; 2024 AMG TECH</p>
+    </footer>
+    
+</body>
+</html>
